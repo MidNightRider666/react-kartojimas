@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import * as Stl from "./Hero.style";
 
 const color = {
+  primary: {
+    background: "blue",
+    color: "#fff",
+  },
   success: {
     background: "green",
     color: "#fff",
@@ -25,11 +29,11 @@ const Hero = ({ type, children, title }) => {
 Hero.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.node.isRequired,
-  type: PropTypes.oneOf(["success", "danger"]),
+  type: PropTypes.oneOf(["success", "danger", "primary"]),
 };
 
 Hero.defaultProps = {
-  type: "success",
+  type: "primary",
 };
 
 export default Hero;
