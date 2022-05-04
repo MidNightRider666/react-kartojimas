@@ -18,7 +18,11 @@ const colors = {
 };
 
 const Button = ({ type, handleClick, children }) => {
-  return <Stl.Button onClick={handleClick} type={colors[type]}>{children}</Stl.Button>;
+  return (
+    <Stl.Button onClick={handleClick} type={colors[type]}>
+      {children}
+    </Stl.Button>
+  );
 };
 
 Button.propTypes = {
@@ -32,7 +36,5 @@ Button.defaultProps = {
   type: "primary",
   onclick: "button",
 };
-
-
 
 export default Button;

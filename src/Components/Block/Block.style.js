@@ -5,6 +5,6 @@ export const Block = styled.div`
   color: ${(props) => props.type.color};
   display: block;
   font-size: 0.5rem;
-  margin: 15px ;
-  padding: 15px ;
+  margin: 15px;
+  padding: 15px;
 `;

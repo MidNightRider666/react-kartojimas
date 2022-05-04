@@ -7,6 +7,6 @@ export const Succes = () => <Block type="success">Some more Text</Block>
 export const Danger = () => <Block type="danger">YES</Block>
 
 export default {
-    title: "Block",
-    component: Block,
-}
+  title: "Block",
+  component: Block,
+};
